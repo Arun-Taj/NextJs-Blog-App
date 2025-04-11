@@ -1,3 +1,5 @@
+import Image from  'next/image'
+
 export const createUser = (userData) => {
   const users = JSON.parse(localStorage.getItem('users')) || []
   users.push(userData)
@@ -45,17 +47,49 @@ export const deleteBlog = (id) => {
   const blogs = getBlogs().filter(blog => blog.id !== id)
   localStorage.setItem('blogs', JSON.stringify(blogs))
 }
+import DigitalArt from '../assets/Digital Art.jpeg'
+import Fashion from '../assets/Fashion Trend.jpeg'
+import Modern from '../assets/Modern Art.jpeg'
 
 export const initializeBlogs = () => {
   const dummyBlogs = [
     {
       id: 1,
-      title: 'Getting Started with Next.js',
-      description: 'Learn the basics of Next.js development',
-      image: '/nextjs-logo.png',
-      createdAt: '2024-01-01T00:00:00Z'
+      title: 'Urban Lifestyle: The Pulse of Modern Cities',
+      description: 'Delve into vibrant urban cultures and discover how modern cities are evolving in style, culture, and infrastructure.',
+      image: 'https://i.pinimg.com/736x/58/55/ff/5855ffc62638be8d27e2c65860addc99.jpg',
+      createdAt: new Date().toISOString()
     },
-    // Add 4 more dummy blogs here
+   
+    {
+      id: 2,
+      title: 'Digital Art: Creativity Unleashed',
+      description: 'Discover the evolution of digital art and its impact on modern creativity in today’s visually-driven world.',
+      image: 'https://cdn.pixabay.com/photo/2024/02/17/13/21/candy-town-8579300_1280.jpg',
+      createdAt: new Date().toISOString()
+    },
+    {
+      id: 3,
+      title: 'Modern Architecture: A Fusion of Form and Function',
+      description: 'A visual journey through architectural marvels that redefine urban skylines and modern living spaces.',
+      image: Modern,
+      createdAt: new Date().toISOString()
+    },
+    {
+      id: 4,
+      title: 'Contemporary Fashion Trends in the Digital Age',
+      description: 'Examine how digital innovation is influencing fashion and transforming the way we express our style.',
+      image: Fashion,
+      createdAt: new Date().toISOString()
+    }, 
+    {
+      id: 5,
+      title: 'The Rise of AI in the Modern Era',
+      description: 'Explore how artificial intelligence is transforming industries and shaping our future.',
+      image: DigitalArt,
+      createdAt: '2024-01-01T00:00:00Z'
+    }
+    
   ]
   localStorage.setItem('blogs', JSON.stringify(dummyBlogs))
 }

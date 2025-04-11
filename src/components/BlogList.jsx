@@ -36,7 +36,7 @@ export default function BlogList({ blogs, onEdit, onDelete }) {
                 onClick={(e) => {
                   // Prevent card onClick event from firing
                   e.stopPropagation()
-                  onEdit(blog)
+                  router.push(`/blogs/${blog.id}/edit`)
                 }}
                 className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 cursor-pointer"
               >
