@@ -1,7 +1,7 @@
 'use client'
 import { useRouter, useParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
-import { getBlogs, updateBlog } from '@/utils/storage'
+import { getBlogs, updateBlog } from '../../../../utils/storage'
 
 export default function EditBlogPage() {
   const router = useRouter()

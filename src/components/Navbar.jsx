@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { logoutUser, checkAuth } from '@/utils/storage'
+import { logoutUser, checkAuth } from '../utils/storage'
 
 export default function Navbar() {
   const router = useRouter()

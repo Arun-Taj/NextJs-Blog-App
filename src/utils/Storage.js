@@ -72,21 +72,21 @@ export const initializeBlogs = () => {
       id: 3,
       title: 'Modern Architecture: A Fusion of Form and Function',
       description: 'A visual journey through architectural marvels that redefine urban skylines and modern living spaces.',
-      image: Modern,
+      image: 'https://i.pinimg.com/736x/91/cb/2b/91cb2b10f10e2ddfe9db0880276e533d.jpg',
       createdAt: new Date().toISOString()
     },
     {
       id: 4,
       title: 'Contemporary Fashion Trends in the Digital Age',
       description: 'Examine how digital innovation is influencing fashion and transforming the way we express our style.',
-      image: Fashion,
+      image: 'https://i.pinimg.com/736x/6d/15/e6/6d15e6ea17595ec87e492d1635a6172d.jpg',
       createdAt: new Date().toISOString()
     }, 
     {
       id: 5,
       title: 'The Rise of AI in the Modern Era',
       description: 'Explore how artificial intelligence is transforming industries and shaping our future.',
-      image: DigitalArt,
+      image: 'https://i.pinimg.com/736x/d1/78/f0/d178f024915543f1e1f0ad30f57646db.jpg',
       createdAt: '2024-01-01T00:00:00Z'
     }
     

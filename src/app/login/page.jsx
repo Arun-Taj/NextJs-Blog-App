@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import { authenticateUser } from '@/utils/storage'
+import { authenticateUser } from '../../utils/storage'
 
 export default function Login() {
   const router = useRouter()

@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import { createUser } from '@/utils/storage'
+import { createUser } from '../../utils/storage'
 
 export default function Signup() {
   const router = useRouter()
