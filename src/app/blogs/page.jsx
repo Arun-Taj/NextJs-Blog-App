@@ -10,7 +10,7 @@ import {
   updateBlog, 
   deleteBlog,
   initializeBlogs
-} from '@/utils/storage'
+} from '../../utils/storage'
 
 export default function BlogsPage() {
   const router = useRouter()
